@@ -16,9 +16,6 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
-/**
- * Created by 54110 on 2019/11/21.
- */
 @Component
 public class UploadUtils {
 

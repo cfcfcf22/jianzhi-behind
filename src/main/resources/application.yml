@@ -13,3 +13,9 @@ spring:
 mybatis:
     mapper-locations: classpath:mapper/*mapper.xml
     type-aliases-package: com.qf.pojo
+#七牛云
+qiniu:
+        accessKey: m7mFmCTX55PMNPkEBaOLFQMLxW4ZFfZwf2EBm1M2
+        secretKey: dn220PqIs813-IYrIZtzO_bGLXPo3QSVNep6wNty
+        bucket:  1908-picture
+        url: http://q1arif8n1.bkt.clouddn.com/
