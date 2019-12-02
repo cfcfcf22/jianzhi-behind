@@ -19,7 +19,8 @@ public class UesrController {
     public User insert(@RequestBody User user){
         return userService.insert(user);
     }
-  /*  //登录验证
+   //登录验证
+    @RequestMapping("/log")
     public R login(@RequestBody Integer phone, @RequestBody String pass, HttpSession session){
         User login = userService.login(phone,pass);
         if (login!=null){
@@ -28,7 +29,9 @@ public class UesrController {
             return R.ok();
         }
         return R.error();
-    }*/
+    }
+    //手机查头像
+
   //个人信息修改
     @RequestMapping("/uupdate")
     public User userup(@RequestBody User user){

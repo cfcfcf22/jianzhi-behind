@@ -23,9 +23,9 @@ public class UserServiceimpl implements UserService {
         return userRepository.save(user);
     }
     //登录 验证信息
-    @Override
-    public User login(String phone, String pass) {
-        User lu = userDaor.findByName(phone);
+   @Override
+    public User login(int phone, String pass) {
+        User lu = userDaor.findByName(pass);
         if (lu!=null){
             if (lu.getPass().equals(pass)){
                 return lu;
@@ -37,6 +37,11 @@ public class UserServiceimpl implements UserService {
     @Override
     public User userupdate(User user) {
        return userRepository.saveAndFlush(user);
+    }
+
+    @Override
+    public int findBypic(float photo) {
+        return 0;
     }
 
 

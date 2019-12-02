@@ -6,4 +6,6 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface UserDao {
     public User findByName(String pass);
+    //手机号调头像
+    public int findBypic(float photo);
 }
