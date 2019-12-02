@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///jz?unicode=true&amp;characterEncoding=utf8
+    username: root
+    password: 123321
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+mybatis:
+    mapper-locations: classpath:mapper/*mapper.xml
+    type-aliases-package: com.qf.pojo
