@@ -12,5 +12,9 @@ public interface UserService {
     //个人信息修改
     public User userupdate(User user);
     //手机号调头像
-    public int findBypic(float photo);
+    public int findpp(float photo);
+    //查询一个
+    public User findById(Integer uid);
+    //用户资料查询
+    public  List<User> findAll();
 }

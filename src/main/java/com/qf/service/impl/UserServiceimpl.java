@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
+import java.util.Optional;
 
 @Service("userService")
 public class UserServiceimpl implements UserService {
@@ -40,8 +42,23 @@ public class UserServiceimpl implements UserService {
     }
 
     @Override
-    public int findBypic(float photo) {
+    public int findpp(float photo) {
         return 0;
+    }
+
+    @Override
+    public User findById(Integer uid) {
+        Optional<User> byId = userRepository.findById(uid);
+        User user=null;
+        if (byId.isPresent()){
+            user=byId.get();
+        }
+        return user;
+    }
+
+    @Override
+    public List<User> findAll() {
+        return userRepository.findAll();
     }
 
 

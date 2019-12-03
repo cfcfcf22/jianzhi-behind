@@ -7,5 +7,5 @@ import org.apache.ibatis.annotations.Mapper;
 public interface UserDao {
     public User findByName(String pass);
     //手机号调头像
-    public int findBypic(float photo);
+    public int findpp (float photo);
 }
